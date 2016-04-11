@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteRule ^test$ test.php [NC,L]
+RewriteRule ^$ api.php [NC,L]
+RewriteRule ^([^\.]+)$ api.php?id=$1 [NC,L]
+
